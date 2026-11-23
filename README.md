@@ -21,3 +21,21 @@ SHA-256 of the joined archive (check with `sha256sum lean.tar.gz`):
 
 If alpo.ge is unavailable, the same 14 parts are attached to this repo's
 [release](https://github.com/DimitriosMitsios/riemann-hypothesis-lean/releases/tag/v2026-11-20).
+
+## Theorem-level discovery split
+
+Create a reproducible 80/20 split of the `GlobalInterpolation` theorems:
+
+```bash
+python3 scripts/split_theorems.py --seed 0 --output theorem-split.json
+```
+
+The JSON manifest lists source file, line, declaration name, kind, and file hash
+for each theorem. It also records the Git revision and seed. Files ending in
+`Statement.lean` are omitted by default because they often wrap results proved
+elsewhere. The main `normPrimes_short_interval_lower` theorem is forced into the
+test set. Use `--holdout FILE:NAME` to choose other held-out theorems.
+
+This is a location split only. Before giving a test theorem to an AI, construct
+an isolated Lean module that hides its existing proof and checks that the
+permitted training material still compiles.
