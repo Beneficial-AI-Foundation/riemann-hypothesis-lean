@@ -1,0 +1,9 @@
+{
+  "schema": "proof-idea-summary/v1",
+  "target": "GlobalTheory.Hk.normPrimes_short_interval_lower",
+  "source_sha256": "e7fdc44653b3599f3350235de06cf3f7e2ea6837dbee3d473a378f1848801815",
+  "prompt_sha256": "e6e2aae8d66ea5f84339eb7b63070d301a6e80cfc1301423bf590191286f3a6c",
+  "summary_sha256": "defd1c3c89333c1c13e89d6b134d610d6a5e78388afbe1bc537b235f80ee1587",
+  "word_count": 227,
+  "model_override": null
+}

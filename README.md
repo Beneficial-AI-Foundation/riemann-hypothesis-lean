@@ -22,7 +22,31 @@ SHA-256 of the joined archive (check with `sha256sum lean.tar.gz`):
 If alpo.ge is unavailable, the same 14 parts are attached to this repo's
 [release](https://github.com/DimitriosMitsios/riemann-hypothesis-lean/releases/tag/v2026-11-20).
 
-## Theorem-level discovery split
+## Proof idea distillation
+
+The current experiment summarizes the proof of
+`GlobalTheory.Hk.normPrimes_short_interval_lower` in informal Markdown of at
+most 500 words, then tests whether a fresh agent can reconstruct the Lean proof
+from that summary. See [PROOF_IDEA_DISTILLATION_PLAN.md](PROOF_IDEA_DISTILLATION_PLAN.md).
+
+The English summarizer prompt is in
+[`harness/prompts/norm_primes_summarizer.md`](harness/prompts/norm_primes_summarizer.md).
+To render its task without calling a model, run
+`python3 -B scripts/run_summary_agent.py --dry-run`. To run the read-only
+summarizer, run `python3 -B scripts/run_summary_agent.py`; it writes
+`harness/NormPrimesProofIdea.md` and a JSON provenance record. This stage
+creates the summary only; it does not test a separate proof agent.
+The proof-agent implementation and matched baseline are the next planned stage;
+their isolation and validation requirements are recorded in the plan.
+
+## Earlier definition discovery experiment
+
+The earlier workflow reads relevant proofs, proposes a Lean-checked definition,
+analyzes theorems that may benefit from it, and then gives a separate proof
+agent the definition and an isolated theorem statement. See
+[THEOREM_DISCOVERY_HARNESS_PLAN.md](THEOREM_DISCOVERY_HARNESS_PLAN.md).
+
+The earlier 80/20 split tooling remains available for optional experiments:
 
 Create a reproducible 80/20 split of the `GlobalInterpolation` theorems:
 
@@ -36,6 +60,17 @@ for each theorem. It also records the Git revision and seed. Files ending in
 elsewhere. The main `normPrimes_short_interval_lower` theorem is forced into the
 test set. Use `--holdout FILE:NAME` to choose other held-out theorems.
 
-This is a location split only. Before giving a test theorem to an AI, construct
-an isolated Lean module that hides its existing proof and checks that the
-permitted training material still compiles.
+This split does not restrict definition discovery and is not required for the
+main workflow. A theorem whose proof was read during discovery is a
+retrospective case. A token-savings claim needs matched proof attempts with
+and without the definition, each with a fresh context.
+
+Generate and Lean-check the first isolated test task:
+
+```bash
+python3 -B scripts/make_isolated_target.py
+```
+
+This writes `harness/NormPrimesTask.lean` with the target proof left blank and
+`harness/NormPrimesTask.check.json` with the reproducibility hashes and checks.
+The task file is meant to fail compilation until a proof is supplied.

@@ -1,0 +1,15 @@
+{
+  "schema": "isolated-theorem-task/v1",
+  "source_revision": "88e5a83597184ed08c7dd9cb1822553ab18cf2ae",
+  "split_seed": "0",
+  "manifest_sha256": "87b64c71e73211a7dda4f52cdae7f06f7184a0df359acba3137c958ddda1ecd7",
+  "task_sha256": "f839c388cc4170bd59a0491d32008132399780a4bea60c8bdb534d06df16f8d1",
+  "target": "GlobalTheory.Hk.normPrimes_short_interval_lower",
+  "checks": {
+    "statement_elaborates": true,
+    "original_proof_passes": true,
+    "empty_proof_rejected": true,
+    "direct_reference_rejected": true,
+    "target_absent_from_imports": true
+  }
+}
