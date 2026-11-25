@@ -1,0 +1,16 @@
+{
+  "schema": "informal-proof-sketch/v1",
+  "target": "GlobalTheory.Hk.RayForm.comb_injective",
+  "source_commit": "81f5e12c55d28d604ad0f3d4af91b374e0d73e7c",
+  "source_sha256": "e0f864a65bee165d83b6262a50665042280fe71921797b30589ba272c860e4dc",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "format": "latex",
+  "format_prompt_sha256": "8baa9ec4730f3989bb465f63d85e215e2d287bfa9cb413383c384845e715d58d",
+  "generation_method": "Converted from the earlier draft after the LaTeX format request",
+  "sketch_sha256": "0a042202d371ff57b982f8761e83bb99b76a6e9360847850d757eda320858a61",
+  "word_count": 103,
+  "word_count_rule": "English words in title, headings, and prose; TeX commands and math omitted",
+  "gap_count": 2,
+  "review_status": "not_reviewed"
+}

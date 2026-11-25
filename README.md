@@ -24,20 +24,21 @@ If alpo.ge is unavailable, the same 14 parts are attached to this repo's
 
 ## Proof idea distillation
 
-The current experiment summarizes the proof of
-`GlobalTheory.Hk.normPrimes_short_interval_lower` in informal Markdown of at
-most 500 words, then tests whether a fresh agent can reconstruct the Lean proof
-from that summary. See [PROOF_IDEA_DISTILLATION_PLAN.md](PROOF_IDEA_DISTILLATION_PLAN.md).
+The current experiment asks one AI to read an existing Lean proof and write an
+informal LaTeX sketch of at most 500 words with explicit lemma-sized gaps. A second
+AI, without the original proof, attempts an informal proof of each gap and
+checks that the pieces yield the target theorem. The first pilot target is
+`GlobalTheory.Hk.RayForm.comb_injective`. Its draft is
+[`harness/RayFormCombInjectiveSketch.tex`](harness/RayFormCombInjectiveSketch.tex)
+(render locally with `pdflatex` to obtain a PDF);
+the independent review has not yet run. See
+[PROOF_IDEA_DISTILLATION_PLAN.md](PROOF_IDEA_DISTILLATION_PLAN.md).
 
-The English summarizer prompt is in
-[`harness/prompts/norm_primes_summarizer.md`](harness/prompts/norm_primes_summarizer.md).
-To render its task without calling a model, run
-`python3 -B scripts/run_summary_agent.py --dry-run`. To run the read-only
-summarizer, run `python3 -B scripts/run_summary_agent.py`; it writes
-`harness/NormPrimesProofIdea.md` and a JSON provenance record. This stage
-creates the summary only; it does not test a separate proof agent.
-The proof-agent implementation and matched baseline are the next planned stage;
-their isolation and validation requirements are recorded in the plan.
+Future sketches use [the LaTeX summarizer prompt](harness/prompts/latex_sketch_summarizer.md).
+
+The previous `normPrimes_short_interval_lower` summary and its generator were
+removed from the working tree after the target changed. They remain available
+in Git history. The next stage is an isolated informal review of the new draft.
 
 ## Earlier definition discovery experiment
 
