@@ -1,0 +1,24 @@
+**Gap 1 — proved informally.** Let \(a,b\in\mathbb C\) and \(m,n\in\mathbb Z\) be arbitrary. The embedded integers \(m,n\) are real. By distributivity and commutativity of complex multiplication,
+\[
+\overline a(ma+nb)=m(\overline a a)+n(\overline a b).
+\]
+For real \(r\) and \(z=x+iy\), the equality \(rz=rx+i(ry)\) gives \(\operatorname{Im}(rz)=r\operatorname{Im}(z)\). Adding complex numbers adds their imaginary coordinates. Since \(\overline a a\) is real, its imaginary part is zero. Therefore
+\[
+\operatorname{Im}\bigl(\overline a(ma+nb)\bigr)
+=m\cdot 0+n\operatorname{Im}(\overline a b)
+=n\operatorname{Im}(\overline a b).
+\]
+This uses the real embedding of the integers, elementary complex arithmetic, and the allowed fact that \(\overline a a\) is real.
+
+**Gap 2 — proved informally.** Let \(a,b\in\mathbb C\) and \(v,w\in\mathbb Z^2\) be arbitrary, and assume \(v_1a+v_2b=w_1a+w_2b\). Subtract the right-hand side from both sides. Regrouping the terms by \(a\) and \(b\) and applying distributivity gives
+\[
+0=(v_1a-w_1a)+(v_2b-w_2b)
+  =(v_1-w_1)a+(v_2-w_2)b.
+\]
+This uses the assumed equality, elementary complex arithmetic, and the fact that the integer embedding preserves subtraction.
+
+**Full argument — closes.** Fix arbitrary \(a,b\in\mathbb C\) with \(\Delta=\operatorname{Im}(\overline a b)\ne0\). If \(a=0\), then \(\overline a b=0\) and \(\Delta=0\), so \(a\ne0\).
+
+Take arbitrary \(v,w\in\mathbb Z^2\) with \(F(v)=F(w)\). Expanding \(F\) gives the hypothesis of Gap 2. Write \(m=v_1-w_1\) and \(n=v_2-w_2\). Both are integers, and Gap 2 gives \(ma+nb=0\). Multiplying by \(\overline a\) and taking imaginary parts gives \(\operatorname{Im}(\overline a(ma+nb))=0\). Gap 1 applies to these integer differences and gives \(n\Delta=0\). Both factors are real, so the real zero-product property and \(\Delta\ne0\) give \(n=0\). The integer embedding identifies only the integer zero with real zero, so \(v_2=w_2\).
+
+Substituting \(n=0\) into \(ma+nb=0\) gives \(ma=0\). The complex zero-product property and \(a\ne0\) give \(m=0\) in \(\mathbb C\), hence \(m=0\) in \(\mathbb Z\) and \(v_1=w_1\). Equality of both coordinates gives \(v=w\). Thus every pair of inputs with equal outputs is equal, proving injectivity for every \(a,b\) satisfying the stated hypothesis.

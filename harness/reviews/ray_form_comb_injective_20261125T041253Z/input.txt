@@ -1,0 +1,76 @@
+
+You are independently checking whether an informal proof sketch can be
+reconstructed. Use only the statement, sketch, and allowed facts below. Do not
+call tools, search for the original theorem, or use external files. Do not
+assume the target theorem, an equivalent injectivity result, or linear
+independence of a and b.
+
+First, give a short, checkable informal proof of Gap 1. Second, do the same for
+Gap 2. For each gap, state exactly which assumptions and allowed facts you use;
+if it fails, state the missing condition or a possible counterexample. Third,
+assuming only gaps you actually proved, reconstruct the full argument to the
+target and check every intermediate step, quantifier, and hypothesis. Report
+each gap as "proved informally", "conditional or doubtful", or "not proved";
+report separately whether the full argument closes. Do not merely assert that
+any step is obvious.
+
+Target statement: For all complex numbers a and b such that
+Im(conjugate(a) * b) is nonzero, the map F : Z × Z → C defined by
+F(m,n) = m*a + n*b is injective. Integer coefficients are embedded in C.
+
+Frozen sketch (LaTeX source; mathematical content is the review input):
+
+```tex
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+
+\title{Injectivity of the Integer Combination Map}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+Let $a,b\in\mathbb C$ satisfy
+\[
+  \Delta=\operatorname{Im}(\overline a b)\ne 0.
+\]
+We must show that $F:\mathbb Z^2\to\mathbb C$, defined by
+$F(m,n)=ma+nb$, is injective. In particular, $a\ne0$, since
+$a=0$ would make $\Delta=0$.
+
+\section*{Main line}
+
+Suppose $F(v)=F(w)$. Gap 2 reduces this equality to
+$(v_1-w_1)a+(v_2-w_2)b=0$. Multiply by $\overline a$ and take
+imaginary parts. Gap 1 gives $(v_2-w_2)\Delta=0$, so $v_2=w_2$.
+The remaining equation is $(v_1-w_1)a=0$; because $a\ne0$, also
+$v_1=w_1$. Thus $v=w$.
+
+\section*{Gaps to prove independently}
+
+\paragraph{Gap 1.}
+For all $a,b\in\mathbb C$ and $m,n\in\mathbb Z$,
+\[
+  \operatorname{Im}\bigl(\overline a(ma+nb)\bigr)
+  =n\operatorname{Im}(\overline a b).
+\]
+The integer coefficients are viewed as real scalars. This identity
+isolates the coefficient of $b$.
+
+\paragraph{Gap 2.}
+For all $a,b\in\mathbb C$ and $v,w\in\mathbb Z^2$, if
+$v_1a+v_2b=w_1a+w_2b$, then
+$(v_1-w_1)a+(v_2-w_2)b=0$.
+
+\section*{Allowed facts}
+
+Use elementary complex arithmetic, that $\overline a a$ is real, and
+the zero-product property for real and complex numbers. No result
+asserting injectivity or linear independence of $a,b$ may be assumed.
+
+\end{document}
+```
+

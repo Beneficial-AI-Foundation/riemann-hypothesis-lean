@@ -30,22 +30,23 @@ AI, without the original proof, attempts an informal proof of each gap and
 checks that the pieces yield the target theorem. The first pilot target is
 `GlobalTheory.Hk.RayForm.comb_injective`. Its draft is
 [`harness/RayFormCombInjectiveSketch.tex`](harness/RayFormCombInjectiveSketch.tex)
-(render locally with `pdflatex` to obtain a PDF);
-the independent review has not yet run. See
+(render locally with `pdflatex` to obtain a PDF); the first
+[informal review](harness/reviews/ray_form_comb_injective_20261125T041253Z/assessment.md)
+proved both gaps and closed the argument without tool calls. See
 [PROOF_IDEA_DISTILLATION_PLAN.md](PROOF_IDEA_DISTILLATION_PLAN.md).
 
 Future sketches use [the LaTeX summarizer prompt](harness/prompts/latex_sketch_summarizer.md).
 
 The previous `normPrimes_short_interval_lower` summary and its generator were
 removed from the working tree after the target changed. They remain available
-in Git history. The next stage is an isolated informal review of the new draft.
+in Git history. The next stage is selecting another target for the same process.
 
 ## Earlier definition discovery experiment
 
 The earlier workflow reads relevant proofs, proposes a Lean-checked definition,
 analyzes theorems that may benefit from it, and then gives a separate proof
-agent the definition and an isolated theorem statement. See
-[THEOREM_DISCOVERY_HARNESS_PLAN.md](THEOREM_DISCOVERY_HARNESS_PLAN.md).
+agent the definition and an isolated theorem statement. Its plan remains in
+Git history.
 
 The earlier 80/20 split tooling remains available for optional experiments:
 

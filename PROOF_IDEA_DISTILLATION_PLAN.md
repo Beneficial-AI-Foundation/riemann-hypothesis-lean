@@ -10,7 +10,7 @@
 
 先选依赖规模较小、但有实质论证步骤的子定理试跑流程。首题是 `GlobalTheory.Hk.RayForm.comb_injective`，位于 `RayClassIdealCountEqNcardShiftedBinaryForm.lean`：其所在文件的本仓库传递导入约 5,900 行，证明利用复数乘积的虚部非零推出整数系数唯一。这个行数只统计本仓库导入文件，包含未实际引用的声明，也不含 Mathlib；它只是选题的粗略指标。试跑后再决定是否改用更接近一万行依赖的题目。
 
-首版 [`RayFormCombInjectiveSketch.tex`](harness/RayFormCombInjectiveSketch.tex) 已生成，共 103 个英文词、两个明确缺口；可在本地编译成 PDF。来源记录在同名 JSON 中，尚未经过独立 informal 复核。今后的草图按 [LaTeX summarizer 提示词](harness/prompts/latex_sketch_summarizer.md)生成。旧的范数素数 summary 及其生成脚本已从当前工作树删除，历史版本仍可从 Git 查阅。原目标的本仓库传递导入约 6.1 万行，留待流程试跑后再考虑。
+首版 [`RayFormCombInjectiveSketch.tex`](harness/RayFormCombInjectiveSketch.tex) 已生成，共 103 个英文词、两个明确缺口；可在本地编译成 PDF。来源记录在同名 JSON 中。2026-11-25 的 [账号复核记录](harness/reviews/ray_form_comb_injective_20261125T041253Z/assessment.md) 给出了两个缺口的 informal 证明并拼接出目标结论；事件日志没有工具调用，但运行环境未在文件系统层面禁止读取原证明。今后的草图按 [LaTeX summarizer 提示词](harness/prompts/latex_sketch_summarizer.md)生成。旧的范数素数 summary 及其生成脚本已从当前工作树删除，历史版本仍可从 Git 查阅。原目标的本仓库传递导入约 6.1 万行，留待流程试跑后再考虑。
 
 ## 两个 AI 的输入隔离
 
@@ -36,8 +36,8 @@
 
 ## 近期交付物
 
-1. 核查 `RayForm.comb_injective` 的允许前置结果与复核输入的隔离方式。
-2. 在新会话中对现有草图运行独立 informal 复核，逐个保存补证和整体拼接结果。
+1. 保存首题复核的判定与隔离限制，并明确允许使用的整数嵌入基本事实。
+2. 选择下一题，冻结来源、草稿和输入后，在新会话重复复核。
 3. 若发现缺口或连接失败，修订草图并在另一新会话中复核。
 
-以前的定义发现实验见 [THEOREM_DISCOVERY_HARNESS_PLAN.md](THEOREM_DISCOVERY_HARNESS_PLAN.md)。
+以前的定义发现实验计划可从 Git 历史查阅。

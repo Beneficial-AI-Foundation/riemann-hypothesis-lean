@@ -1,0 +1,7 @@
+Run time (UTC): 20261125T041253Z
+Exit status: 0
+Workspace: /tmp/ray-form-review.rRfbdqza
+Sketch SHA-256: 0a042202d371ff57b982f8761e83bb99b76a6e9360847850d757eda320858a61
+Input SHA-256: 76b6c32eee7524ab37d663292584708f33efd196b5532f6bac01b667c3cfcbae
+Audit: no tool items observed in JSONL
+Interpretation: behavioral check only; filesystem read access is not blocked.

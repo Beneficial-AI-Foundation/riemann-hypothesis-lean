@@ -12,5 +12,6 @@
   "word_count": 103,
   "word_count_rule": "English words in title, headings, and prose; TeX commands and math omitted",
   "gap_count": 2,
-  "review_status": "not_reviewed"
+  "review_status": "passed_informal_reconstructibility_review",
+  "review_record": "harness/reviews/ray_form_comb_injective_20261125T041253Z/assessment.md"
 }
