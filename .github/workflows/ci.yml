@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  harness:
+    name: python harness
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The harness and its tests use only the Python standard library, so there
+      # is nothing to install.
+      - name: Syntax-check the harness
+        run: python -m compileall -q scripts tests harness
+
+      - name: Run the harness unit tests
+        run: python -m unittest discover -s tests -t . -v
+
+      # NOTE: the Lean proof sources under src/ (~1.3 GB, ~175k files) are a
+      # vendored third-party redistribution that needs Mathlib and is "not
+      # compiled for this listing" (see README). Building them is deliberately
+      # out of scope for CI; this workflow checks only the Python harness.
