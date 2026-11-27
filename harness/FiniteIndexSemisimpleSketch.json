@@ -1,0 +1,20 @@
+{
+  "schema": "informal-proof-sketch/v1",
+  "target": "GlobalTheory.FiniteIndexSemisimple.isSSRep_of_finiteIndex",
+  "source_file": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/IsSSRepOfFiniteIndex.lean",
+  "source_commit": "3ecb6f29391569154d9b13ca62004aee4f3263d8",
+  "source_sha256": "bd7f57e22128186fb933848d9b0dd128c41cabf1565e2af52431f71ed930b87f",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "dependency_scope": "Transitive local src imports, including the source file; excludes Mathlib and unused-import filtering",
+  "dependency_files": 52,
+  "dependency_lines": 12498,
+  "format": "latex",
+  "format_prompt_sha256": "8baa9ec4730f3989bb465f63d85e215e2d287bfa9cb413383c384845e715d58d",
+  "sketch_sha256": "c08ac68b703e4b5cb99f37d9418b0db2acdc6a909a5d30530a4443877596e842",
+  "word_count": 247,
+  "word_count_rule": "texcount -1 -sum, counting prose and headings but not mathematical expressions or TeX commands",
+  "gap_count": 3,
+  "review_status": "passed_informal_reconstructibility_review",
+  "review_record": "harness/reviews/FiniteIndexSemisimpleSketch_20261127T095121Z/assessment.md"
+}

@@ -46,3 +46,23 @@ directory and made no observed tool calls, but the `read-only` sandbox did not
 block reads of other filesystem paths. The run therefore provides a behavioral
 isolation check, not a filesystem-level guarantee that the original proof was
 inaccessible.
+
+## Second target: finite-index semisimplicity
+
+The next draft targets `GlobalTheory.FiniteIndexSemisimple.isSSRep_of_finiteIndex`
+in [`IsSSRepOfFiniteIndex.lean`](src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/IsSSRepOfFiniteIndex.lean).
+Its source file and transitive local imports contain 12,498 lines across 52
+files, including the 85-line target file. This is a coarse local dependency
+measure: it includes declarations the proof may never use and excludes Mathlib.
+
+The [frozen LaTeX draft](harness/FiniteIndexSemisimpleSketch.tex) has 247 words
+by `texcount -1 -sum` and three explicit gaps. It preserves the projection
+averaging argument: choose a complement invariant under the finite-index
+subgroup, average conjugates of its projection over the cosets, and take the
+kernel of the resulting equivariant projection. The [source and sketch hashes](harness/FiniteIndexSemisimpleSketch.json)
+are recorded. The LaTeX compiles to a one-page PDF. On 2026-11-27, a fresh
+account-authenticated review gave informal proofs of all three gaps and closed
+the full argument. The [review record](harness/reviews/FiniteIndexSemisimpleSketch_20261127T095121Z/assessment.md)
+retains the answer, input, and event log. This supports informal
+reconstructibility, subject to the same filesystem-isolation limitation as the
+first pilot.

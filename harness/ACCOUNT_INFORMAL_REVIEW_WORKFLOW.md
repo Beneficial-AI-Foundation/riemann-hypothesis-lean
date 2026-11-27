@@ -1,4 +1,4 @@
-# 使用 Codex 账号复核 `RayForm.comb_injective` 的 informal 草稿
+# 使用 Codex 账号复核 informal 草稿
 
 这是按 [`PROOF_IDEA_DISTILLATION_PLAN.md`](../PROOF_IDEA_DISTILLATION_PLAN.md)
 进行的一次账号试跑。使用已登录 ChatGPT 账号的 Codex，不需要 Python 或 API key。
@@ -6,10 +6,12 @@
 
 ## 脚本运行
 
-在仓库根目录运行 `bash harness/run_account_informal_review.sh`。脚本核对冻结的
-TeX 哈希，从下方标记区提取唯一输入，创建 `/tmp` 空工作目录，通过 `codex exec`
-新开账号复核线程，并把输入、原始回答、JSONL 事件和检查摘要保存到
-`harness/reviews/ray_form_comb_injective_<UTC时间>/`。脚本不使用 API key。
+在仓库根目录运行 `bash harness/run_account_informal_review.sh`，默认选择
+`review_status` 为 `draft_not_reviewed` 的下一份草图。也可传入具体草图路径，
+如 `bash harness/run_account_informal_review.sh harness/FiniteIndexSemisimpleSketch.tex`。
+脚本核对冻结的 TeX 哈希和 gap 数量，自动生成输入，创建 `/tmp` 空工作目录，
+通过 `codex exec` 新开账号复核线程，并把输入、原始回答、JSONL 事件和检查摘要
+保存到 `harness/reviews/<草图名>_<UTC时间>/`。脚本不使用 API key。
 
 检查 `summary.txt` 和 `events.jsonl`：只有完整运行、没有工具事件时，才能记录
 “本轮未观察到文件读取”。这仍不是严格的文件系统隔离；`read-only` 不阻止读取。
@@ -31,7 +33,7 @@ TeX 哈希，从下方标记区提取唯一输入，创建 `/tmp` 空工作目�
 其他目录；仅凭新线程和空目录不能严格证明复核者没有访问仓库。若日志显示读取了
 原仓库，或无法核查实际可读范围，请将结果标为“回顾性阅读”。
 
-## 直接复制给复核 AI 的消息
+## 首题的历史复核输入
 
 REVIEW MESSAGE START
 

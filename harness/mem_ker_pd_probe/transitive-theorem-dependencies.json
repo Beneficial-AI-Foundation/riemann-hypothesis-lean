@@ -1,0 +1,891 @@
+{
+  "target": "GlobalTheory.SquareAgree.mem_kerPD",
+  "scope": "transitive project theorem dependencies",
+  "reachable_project_constants": 2059,
+  "project_source_lines_for_all_reachable_constants": 5001,
+  "project_source_files_for_all_reachable_constants": 86,
+  "lean_theorem_constants": 916,
+  "explicit_theorem_declarations_including_target": 125,
+  "explicit_theorem_lines_including_target": 1051,
+  "explicit_theorem_dependency_lines": 1028,
+  "proof_constant_owner_source_lines_including_theorems": 2558,
+  "source_files_with_reachable_proof_constants": 70,
+  "missing_ranges": [],
+  "explicit_theorems": [
+    {
+      "name": "Bl.NearbyExistence.goal1",
+      "path": "src/Lemmata/NearbyExistence/ExistsNear.lean",
+      "start": 18,
+      "end": 58,
+      "lines": 41
+    },
+    {
+      "name": "Formalism.BasicNotions.GK_le",
+      "path": "src/Formalism/SharpRestriction/LevelLetterCocycles/DataNLoc.lean",
+      "start": 703,
+      "end": 703,
+      "lines": 1
+    },
+    {
+      "name": "Formalism.BasicNotions.Loc.OC_l_not_unit",
+      "path": "src/Formalism/SharpRestriction/LevelLetterCocycles/DataNLoc.lean",
+      "start": 746,
+      "end": 759,
+      "lines": 14
+    },
+    {
+      "name": "Formalism.BasicNotions.Ranks.blk_lt",
+      "path": "src/Formalism/LocalRingCardinality/DataForms.lean",
+      "start": 100,
+      "end": 105,
+      "lines": 6
+    },
+    {
+      "name": "Formalism.HC.HostAx.isCMField_hostE",
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+      "start": 182,
+      "end": 182,
+      "lines": 1
+    },
+    {
+      "name": "Formalism.HermitianLatticesTheory.fcoord_add",
+      "path": "src/Formalism/HermitianLattices/StatementMaj.lean",
+      "start": 51,
+      "end": 57,
+      "lines": 7
+    },
+    {
+      "name": "Formalism.HermitianLatticesTheory.fcoord_zero",
+      "path": "src/Formalism/HermitianLattices/StatementMaj.lean",
+      "start": 59,
+      "end": 64,
+      "lines": 6
+    },
+    {
+      "name": "Formalism.UG.P.glint_exists_approx",
+      "path": "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/GlintPrincRelIndexNeZero.lean",
+      "start": 151,
+      "end": 153,
+      "lines": 3
+    },
+    {
+      "name": "Formalism.UG.P.glint_finite_residueField",
+      "path": "src/Formalism/SatakeDualWeyl/AdelicIwasawaHecke/GlintPrincRelIndexNeZero.lean",
+      "start": 155,
+      "end": 188,
+      "lines": 34
+    },
+    {
+      "name": "Formalism.UG.cT_mul",
+      "path": "src/Formalism/SatakeDualWeyl/Statement.lean",
+      "start": 19,
+      "end": 21,
+      "lines": 3
+    },
+    {
+      "name": "Formalism.UG.cT_one",
+      "path": "src/Formalism/SatakeDualWeyl/Statement.lean",
+      "start": 23,
+      "end": 25,
+      "lines": 3
+    },
+    {
+      "name": "GlobalTheory.AdLat.OpenLat.exists_nsmul_adele",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/IsOpenNsmulAdelicCompletionOfVectorSet.lean",
+      "start": 25,
+      "end": 33,
+      "lines": 9
+    },
+    {
+      "name": "GlobalTheory.AdLat.exists_eq_algebraMap_add_nsmul",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/FiniteAdeleStrongApproximationModNat.lean",
+      "start": 136,
+      "end": 149,
+      "lines": 14
+    },
+    {
+      "name": "GlobalTheory.AdLat.strong_approximation_mod_nat",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/FiniteAdeleStrongApproximationModNat.lean",
+      "start": 151,
+      "end": 169,
+      "lines": 19
+    },
+    {
+      "name": "GlobalTheory.AdeleCharTwist.algebraMap_eq_pairA",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsNeZeroAdeleCharEqCompMulTotallyReal.lean",
+      "start": 45,
+      "end": 48,
+      "lines": 4
+    },
+    {
+      "name": "GlobalTheory.AdeleCharTwist.denseRange_fin",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsNeZeroAdeleCharEqCompMulTotallyReal.lean",
+      "start": 50,
+      "end": 60,
+      "lines": 11
+    },
+    {
+      "name": "GlobalTheory.AdeleCharTwist.pairA_add",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsNeZeroAdeleCharEqCompMulTotallyReal.lean",
+      "start": 42,
+      "end": 43,
+      "lines": 2
+    },
+    {
+      "name": "GlobalTheory.AdeleCocompact.isCompact_integral",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/HeightProofs/ExistsCompactAdeleRingModNumberField.lean",
+      "start": 65,
+      "end": 73,
+      "lines": 9
+    },
+    {
+      "name": "GlobalTheory.AdelicUnitaryTop.compactSpace_adicCompletionIntegers",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/LcscAdelicUnitaryGroup.lean",
+      "start": 47,
+      "end": 49,
+      "lines": 3
+    },
+    {
+      "name": "GlobalTheory.AdelicUnitaryTop.properSpace_adicCompletion",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/LcscAdelicUnitaryGroup.lean",
+      "start": 40,
+      "end": 45,
+      "lines": 6
+    },
+    {
+      "name": "GlobalTheory.Core.Rk.RapidInt.continuous_toMixed",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/IntegrableOfRapidDecay.lean",
+      "start": 17,
+      "end": 23,
+      "lines": 7
+    },
+    {
+      "name": "GlobalTheory.IntegralFinAdele.eq_zero_of_forall_mul",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IntegralFiniteAdeleCompactClosedMultiples.lean",
+      "start": 31,
+      "end": 53,
+      "lines": 23
+    },
+    {
+      "name": "GlobalTheory.IntegralFinAdele.exists_nat_mul_integral",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IntegralFiniteAdeleCompactClosedMultiples.lean",
+      "start": 55,
+      "end": 70,
+      "lines": 16
+    },
+    {
+      "name": "GlobalTheory.IntegralFinAdele.integral_finiteAdele_properties",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IntegralFiniteAdeleCompactClosedMultiples.lean",
+      "start": 72,
+      "end": 89,
+      "lines": 18
+    },
+    {
+      "name": "GlobalTheory.IntegralFinAdele.mul_apply'",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IntegralFiniteAdeleCompactClosedMultiples.lean",
+      "start": 22,
+      "end": 23,
+      "lines": 2
+    },
+    {
+      "name": "GlobalTheory.IntegralFinAdele.natCast_apply",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IntegralFiniteAdeleCompactClosedMultiples.lean",
+      "start": 17,
+      "end": 20,
+      "lines": 4
+    },
+    {
+      "name": "GlobalTheory.IntegralFinAdele.pow_apply'",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IntegralFiniteAdeleCompactClosedMultiples.lean",
+      "start": 25,
+      "end": 29,
+      "lines": 5
+    },
+    {
+      "name": "GlobalTheory.IntegralFinAdele.t2Space_finiteAdeleRing'",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IntegralFiniteAdeleCompactClosedMultiples.lean",
+      "start": 13,
+      "end": 15,
+      "lines": 3
+    },
+    {
+      "name": "GlobalTheory.LocalNormBound.local_bound",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/ImportsTer.lean",
+      "start": 8,
+      "end": 28,
+      "lines": 21
+    },
+    {
+      "name": "GlobalTheory.LocalNormBound.main",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/UnitaryExistence/ImportsTer.lean",
+      "start": 30,
+      "end": 60,
+      "lines": 31
+    },
+    {
+      "name": "GlobalTheory.SquareAgree.isDatum_linear",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsDatumLinear.lean",
+      "start": 20,
+      "end": 39,
+      "lines": 20
+    },
+    {
+      "name": "GlobalTheory.SquareAgree.mem_kerPD",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MemKerPD.lean",
+      "start": 29,
+      "end": 51,
+      "lines": 23
+    },
+    {
+      "name": "GlobalTheory.StdCharFromIsStd.at_pairA",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsStdCharNegOneOfStandardTraceAdelicAddChar.lean",
+      "start": 17,
+      "end": 21,
+      "lines": 5
+    },
+    {
+      "name": "GlobalTheory.StdCharFromIsStd.norm_exp_real",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsStdCharNegOneOfStandardTraceAdelicAddChar.lean",
+      "start": 28,
+      "end": 31,
+      "lines": 4
+    },
+    {
+      "name": "GlobalTheory.StdCharFromIsStd.norm_psi",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsStdCharNegOneOfStandardTraceAdelicAddChar.lean",
+      "start": 58,
+      "end": 59,
+      "lines": 2
+    },
+    {
+      "name": "GlobalTheory.StdCharFromIsStd.norm_psi_fin",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsStdCharNegOneOfStandardTraceAdelicAddChar.lean",
+      "start": 42,
+      "end": 56,
+      "lines": 15
+    },
+    {
+      "name": "GlobalTheory.StdCharFromIsStd.norm_psi_inf",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsStdCharNegOneOfStandardTraceAdelicAddChar.lean",
+      "start": 33,
+      "end": 35,
+      "lines": 3
+    },
+    {
+      "name": "GlobalTheory.StdCharFromIsStd.pairA_split",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsStdCharNegOneOfStandardTraceAdelicAddChar.lean",
+      "start": 37,
+      "end": 40,
+      "lines": 4
+    },
+    {
+      "name": "GlobalTheory.StdCharFromIsStd.psi_pairA",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsStdCharNegOneOfStandardTraceAdelicAddChar.lean",
+      "start": 23,
+      "end": 26,
+      "lines": 4
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.archV_add",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 36,
+      "end": 38,
+      "lines": 3
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.archV_alg",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 44,
+      "end": 49,
+      "lines": 6
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.continuous_archV",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 30,
+      "end": 31,
+      "lines": 2
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.continuous_finV",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 33,
+      "end": 34,
+      "lines": 2
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.finV_add",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 40,
+      "end": 42,
+      "lines": 3
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.finV_alg",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 51,
+      "end": 53,
+      "lines": 3
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.isOpen_integral",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 109,
+      "end": 113,
+      "lines": 5
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.local_bound",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 115,
+      "end": 196,
+      "lines": 82
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.one_add_norm_le",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 58,
+      "end": 62,
+      "lines": 5
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.pureA_eq",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 55,
+      "end": 56,
+      "lines": 2
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.pure_cont",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 211,
+      "end": 228,
+      "lines": 18
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.schA_cont",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 230,
+      "end": 259,
+      "lines": 30
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.schwartz_shift_le",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 64,
+      "end": 82,
+      "lines": 19
+    },
+    {
+      "name": "GlobalTheory.ThetaTrCont.summable_one_add_norm_inv",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ContinuousThetaTransformAdelicSchwartz.lean",
+      "start": 84,
+      "end": 94,
+      "lines": 11
+    },
+    {
+      "name": "GlobalTheory.WeilM.discreteTopology_denomLattice",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulIntegralOfIsCompact.lean",
+      "start": 72,
+      "end": 87,
+      "lines": 16
+    },
+    {
+      "name": "GlobalTheory.WeilM.exists_nat_mul_integral_of_isCompact",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulIntegralOfIsCompact.lean",
+      "start": 27,
+      "end": 59,
+      "lines": 33
+    },
+    {
+      "name": "GlobalTheory.WeilM.thetaSum_smul",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulIntegralOfIsCompact.lean",
+      "start": 229,
+      "end": 233,
+      "lines": 5
+    },
+    {
+      "name": "ReciprocityTheory.Gal.apply_mem_iff_of_mem_Dec",
+      "path": "src/ReciprocityTheory/GaloisValuations/Global.lean",
+      "start": 20,
+      "end": 25,
+      "lines": 6
+    },
+    {
+      "name": "ReciprocityTheory.Gal.continuous_locFam",
+      "path": "src/ReciprocityTheory/Hypotheses/GalCoh.lean",
+      "start": 137,
+      "end": 139,
+      "lines": 3
+    },
+    {
+      "name": "ReciprocityTheory.Gal.continuous_locHom",
+      "path": "src/ReciprocityTheory/GaloisValuations/Global.lean",
+      "start": 155,
+      "end": 156,
+      "lines": 2
+    },
+    {
+      "name": "ReciprocityTheory.Gal.continuous_toGS",
+      "path": "src/ReciprocityTheory/GaloisValuations/Global.lean",
+      "start": 148,
+      "end": 150,
+      "lines": 3
+    },
+    {
+      "name": "ReciprocityTheory.Gal.mem_Dec",
+      "path": "src/ReciprocityTheory/GaloisValuations/Global.lean",
+      "start": 17,
+      "end": 18,
+      "lines": 2
+    },
+    {
+      "name": "ReciprocityTheory.Gal.mem_coboundaries1",
+      "path": "src/ReciprocityTheory/GaloisValuations/SeparatedDvrSecondCohomologyMem.lean",
+      "start": 59,
+      "end": 64,
+      "lines": 6
+    },
+    {
+      "name": "ReciprocityTheory.Gal.mul_inv_apply",
+      "path": "src/ReciprocityTheory/GaloisValuations/Global.lean",
+      "start": 42,
+      "end": 43,
+      "lines": 2
+    },
+    {
+      "name": "ReciprocityTheory.Gal.valuation_apply_lt_one_iff",
+      "path": "src/ReciprocityTheory/GaloisValuations/Global.lean",
+      "start": 36,
+      "end": 40,
+      "lines": 5
+    },
+    {
+      "name": "ReciprocityTheory.Gal.valuation_lt_one_iff'",
+      "path": "src/ReciprocityTheory/GaloisValuations/Global.lean",
+      "start": 27,
+      "end": 34,
+      "lines": 8
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.eval_extend",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 190,
+      "end": 193,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.eval_log",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 238,
+      "end": 240,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.eval_log_of_mul_eq",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 189,
+      "end": 193,
+      "lines": 5
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.exists_quot",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 166,
+      "end": 187,
+      "lines": 22
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.ext_eval",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 209,
+      "end": 210,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.extend_log",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 195,
+      "end": 201,
+      "lines": 7
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.logPartial_sub_mem",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 220,
+      "end": 230,
+      "lines": 11
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.logTeich_mul",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 222,
+      "end": 227,
+      "lines": 6
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.logTeich_pow",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 239,
+      "end": 242,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.log_congr",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 195,
+      "end": 196,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.Acris.log_mul",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 198,
+      "end": 207,
+      "lines": 10
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.extend_mem",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 98,
+      "end": 108,
+      "lines": 11
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.factorial_mul_gamma",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 85,
+      "end": 91,
+      "lines": 7
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.gamma_frob_mem",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 139,
+      "end": 145,
+      "lines": 7
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.gamma_map_mem",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 119,
+      "end": 121,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.gamma_p_mul_mem",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 130,
+      "end": 137,
+      "lines": 8
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.mem_span_pow_iff",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 81,
+      "end": 83,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.p_dvd_frob",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 123,
+      "end": 128,
+      "lines": 6
+    },
+    {
+      "name": "Reformulated.AutPerF.AcrisZero.p_pow_mul_cancel",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 71,
+      "end": 76,
+      "lines": 6
+    },
+    {
+      "name": "Reformulated.AutPerF.Ainf.frob_eq_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 168,
+      "end": 169,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.Ainf.map_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 161,
+      "end": 163,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.Ainf.p_dvd_frob_sub_pow",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 194,
+      "end": 197,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.Ainf.theta_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 208,
+      "end": 221,
+      "lines": 14
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.eq_gamma",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 89,
+      "end": 94,
+      "lines": 6
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.factorial_mul_gamma",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 83,
+      "end": 86,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.hom_ext",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 240,
+      "end": 242,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.isUnit_p",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 227,
+      "end": 228,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.kerTheta_le_comap",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/DeRhamMap.lean",
+      "start": 17,
+      "end": 20,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.map_gamma",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 78,
+      "end": 80,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.map_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 291,
+      "end": 294,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.AinfInv.theta_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 325,
+      "end": 329,
+      "lines": 5
+    },
+    {
+      "name": "Reformulated.AutPerF.Bcris.isUnit_logTeich",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 264,
+      "end": 266,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.Bcris.isUnit_p",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 268,
+      "end": 269,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.BcrisPlus.isUnit_p",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 267,
+      "end": 268,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.BdR.hom_ext",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/DeRhamMap.lean",
+      "start": 110,
+      "end": 112,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.BdR.map_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/DeRhamMap.lean",
+      "start": 127,
+      "end": 130,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.BdRPlus.map_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/DeRhamMap.lean",
+      "start": 61,
+      "end": 63,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.BdRPlus.theta_eq_one_iff",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 136,
+      "end": 138,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.IsPrimitive.map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 71,
+      "end": 75,
+      "lines": 5
+    },
+    {
+      "name": "Reformulated.AutPerF.IsUnitBall.dvd_iff_norm_le",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/UniformContinuousConstSMulOfIsIsometricSMul.lean",
+      "start": 31,
+      "end": 44,
+      "lines": 14
+    },
+    {
+      "name": "Reformulated.AutPerF.IsUnitBall.isUnit_iff_norm_eq_one",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/UniformContinuousConstSMulOfIsIsometricSMul.lean",
+      "start": 47,
+      "end": 51,
+      "lines": 5
+    },
+    {
+      "name": "Reformulated.AutPerF.IsUnitBall.mem_span_pow_iff",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/UniformContinuousConstSMulOfIsIsometricSMul.lean",
+      "start": 55,
+      "end": 60,
+      "lines": 6
+    },
+    {
+      "name": "Reformulated.AutPerF.IsUnitBall.norm_le_one",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/UniformContinuousConstSMulOfIsIsometricSMul.lean",
+      "start": 28,
+      "end": 28,
+      "lines": 1
+    },
+    {
+      "name": "Reformulated.AutPerF.IsUnitBall.norm_smul_eq",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/UniformContinuousConstSMulOfIsIsometricSMul.lean",
+      "start": 149,
+      "end": 150,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.Tilt.coeff_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 104,
+      "end": 106,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.Tilt.ext",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 101,
+      "end": 102,
+      "lines": 2
+    },
+    {
+      "name": "Reformulated.AutPerF.Tilt.map_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 114,
+      "end": 119,
+      "lines": 6
+    },
+    {
+      "name": "Reformulated.AutPerF.Tilt.untilt_map",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 123,
+      "end": 135,
+      "lines": 13
+    },
+    {
+      "name": "Reformulated.AutPerF.adicMap_adicMap",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 64,
+      "end": 72,
+      "lines": 9
+    },
+    {
+      "name": "Reformulated.AutPerF.adicMap_eq_id",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 56,
+      "end": 62,
+      "lines": 7
+    },
+    {
+      "name": "Reformulated.AutPerF.descFactorial_pred_modEq",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 35,
+      "end": 45,
+      "lines": 11
+    },
+    {
+      "name": "Reformulated.AutPerF.evalₐ_adicMap",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 33,
+      "end": 47,
+      "lines": 15
+    },
+    {
+      "name": "Reformulated.AutPerF.evalₐ_pow_eq_zero",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 45,
+      "end": 55,
+      "lines": 11
+    },
+    {
+      "name": "Reformulated.AutPerF.exists_factorial_mul_eq_pow",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/ExistsFactorialMulEqPow.lean",
+      "start": 18,
+      "end": 33,
+      "lines": 16
+    },
+    {
+      "name": "Reformulated.AutPerF.factorPow_evalₐ",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 38,
+      "end": 43,
+      "lines": 6
+    },
+    {
+      "name": "Reformulated.AutPerF.map_truncLog",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 60,
+      "end": 62,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.mul_sum_descFactorial",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean",
+      "start": 47,
+      "end": 59,
+      "lines": 13
+    },
+    {
+      "name": "Reformulated.AutPerF.pow_le_comap_pow",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 15,
+      "end": 17,
+      "lines": 3
+    },
+    {
+      "name": "Reformulated.AutPerF.span_natCast_le_comap",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/SpanNatCastLeComap.lean",
+      "start": 74,
+      "end": 77,
+      "lines": 4
+    },
+    {
+      "name": "Reformulated.AutPerF.truncLog_eq_of_pow_eq_zero",
+      "path": "src/Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/TruncLogEqOfPowEqZero.lean",
+      "start": 64,
+      "end": 70,
+      "lines": 7
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 .parts/
 .lake/
+.verilib/
 __pycache__/
 
 # LaTeX output and build artifacts (keep .tex sources)

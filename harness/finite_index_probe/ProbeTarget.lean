@@ -1,0 +1,1 @@
+../../src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/IsSSRepOfFiniteIndex.lean

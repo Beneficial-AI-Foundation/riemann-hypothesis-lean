@@ -1,0 +1,41 @@
+### Gap 1 — proved informally
+
+Fix \(n\in N\). Every \(v\in V\) has a unique decomposition \(v=w+w'\) with \(w\in W\) and \(w'\in W'\). Invariance of both summands gives \(\rho(n)w\in W\) and \(\rho(n)w'\in W'\), so
+\[
+p\rho(n)v=p\bigl(\rho(n)w+\rho(n)w'\bigr)=\rho(n)w=\rho(n)pv.
+\]
+Thus \(p\rho(n)=\rho(n)p\) for every \(n\in N\).
+
+### Gap 2 — proved informally
+
+For every \(g\in\Gamma\) and \(n\in N\), the representation law and Gap 1 give
+\[
+T_{gn}
+=\rho(g)\rho(n)p\rho(n)^{-1}\rho(g)^{-1}
+=\rho(g)p\rho(g)^{-1}
+=T_g.
+\]
+Any two representatives of a left coset \(gN\) differ by right multiplication by an element of \(N\). Hence \(T_{gN}:=T_g\) is well-defined and the finite sum \(S=\sum_{q\in\Gamma/N}T_q\) is independent of representatives.
+
+For \(h,g\in\Gamma\), the representation law also gives
+\[
+T_{hg}=\rho(h)\rho(g)p\rho(g)^{-1}\rho(h)^{-1}
+=\rho(h)T_g\rho(h)^{-1}.
+\]
+For each \(h\in\Gamma\), the map \(gN\mapsto hgN\) is well-defined and is a permutation with inverse given by left multiplication by \(h^{-1}\). Consequently,
+\[
+\rho(h)S\rho(h)^{-1}=\sum_{q\in\Gamma/N}T_{hq}=S.
+\]
+Multiplying on the right by \(\rho(h)\) gives \(S\rho(h)=\rho(h)S\).
+
+### Gap 3 — proved informally
+
+For every \(v\in V\), write \(v=Pv+(v-Pv)\). The first term lies in \(W\). Since \(P\) fixes \(W\), we have \(P(Pv)=Pv\), so the second term lies in \(\ker P\). If \(w\in W\cap\ker P\), then \(w=Pw=0\). This proves \(V=W\oplus\ker P\). For every \(h\in\Gamma\) and \(u\in\ker P\), commutation gives \(P\rho(h)u=\rho(h)Pu=0\), proving \(\Gamma\)-invariance of \(\ker P\).
+
+### Full argument — closes
+
+Let \(W\) be any \(\Gamma\)-invariant subspace. As \(N\leq\Gamma\), \(W\) is \(N\)-invariant, so the hypothesis supplies an \(N\)-invariant subspace \(W'\) with \(V=W\oplus W'\). The linear projection \(p\) onto \(W\) along \(W'\) commutes with \(N\) by Gap 1.
+
+For every \(g\in\Gamma\), \(T_g=\rho(g)p\rho(g)^{-1}\) is linear and has image in \(W\), because \(p\) has image in \(W\) and \(\rho(g)\) preserves \(W\). For \(w\in W\), \(\rho(g)^{-1}w=\rho(g^{-1})w\) lies in \(W\), so \(p\) fixes it and \(T_gw=w\). By Gap 2 the sum \(S\) over the left cosets is well-defined and commutes with every \(\rho(h)\).
+
+The number \(d=[\Gamma:N]\) is finite and positive, since \(N\) itself is a coset. Its image in \(k\) is nonzero by characteristic zero and is invertible because \(k\) is a field. Thus \(P=d^{-1}S\) is linear, commutes with every \(\rho(h)\), and has image in \(W\) because every summand does. For every \(w\in W\), each of the \(d\) summands sends \(w\) to itself, so \(Pw=d^{-1}(dw)=w\). All hypotheses of Gap 3 hold, and \(\ker P\) is a \(\Gamma\)-invariant complement of \(W\). Since \(W\) was arbitrary, every \(\Gamma\)-invariant subspace has such a complement.

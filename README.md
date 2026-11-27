@@ -35,11 +35,16 @@ checks that the pieces yield the target theorem. The first pilot target is
 proved both gaps and closed the argument without tool calls. See
 [PROOF_IDEA_DISTILLATION_PLAN.md](PROOF_IDEA_DISTILLATION_PLAN.md).
 
+The second [finite-index semisimplicity sketch](harness/FiniteIndexSemisimpleSketch.tex)
+has three gaps, all of which passed [informal review](harness/reviews/FiniteIndexSemisimpleSketch_20261127T095121Z/assessment.md).
 Future sketches use [the LaTeX summarizer prompt](harness/prompts/latex_sketch_summarizer.md).
+Run `bash harness/run_account_informal_review.sh` to review the next frozen
+sketch whose metadata says `draft_not_reviewed`, or pass a specific `.tex` path.
 
 The previous `normPrimes_short_interval_lower` summary and its generator were
 removed from the working tree after the target changed. They remain available
-in Git history. The next stage is selecting another target for the same process.
+in Git history. The next target under dependency inspection is
+`GlobalTheory.SquareAgree.mem_kerPD`; its sketch has not yet been generated.
 
 ## Earlier definition discovery experiment
 

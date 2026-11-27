@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+
+\title{Semisimplicity from a Finite-Index Subgroup}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+Let $\rho:\Gamma\to\mathrm{GL}(V)$ be a finite-dimensional representation
+over a field $k$ of characteristic zero, and let $N\leq\Gamma$ have finite
+index. Assume every $N$-invariant subspace has an $N$-invariant complement.
+We show that every $\Gamma$-invariant subspace does too.
+
+\section*{Main line}
+
+Fix a $\Gamma$-invariant subspace $W$. Choose an $N$-invariant complement
+$W'$ and let $p:V\to V$ be projection onto $W$ along $W'$. Gap 1 makes $p$
+commute with $N$. Conjugate it by $\rho(g)$:
+\[
+  T_g=\rho(g)p\rho(g)^{-1}.
+\]
+Each $T_g$ maps into $W$ and fixes $W$. Gap 2 lets $T_g$ descend to the
+finite set of left cosets $\Gamma/N$ and makes
+$S=\sum_{q\in\Gamma/N}T_q$ commute with $\Gamma$. Since
+$d=|\Gamma/N|$ is nonzero in $k$, $P=d^{-1}S$ is a
+$\Gamma$-equivariant map into $W$ that fixes $W$. By Gap 3,
+$\ker P$ is a $\Gamma$-invariant complement of $W$.
+
+\section*{Gaps to prove independently}
+
+\paragraph{Gap 1.}
+If $V=W\oplus W'$ and both summands are $N$-invariant, prove that the
+projection $p$ onto $W$ along $W'$ satisfies
+$p\rho(n)=\rho(n)p$ for every $n\in N$.
+
+\paragraph{Gap 2.}
+Under Gap 1, prove $T_{gn}=T_g$ for $g\in\Gamma$, $n\in N$, and
+$T_{hg}=\rho(h)T_g\rho(h)^{-1}$ for $h,g\in\Gamma$. Deduce that
+$S=\sum_{q\in\Gamma/N}T_q$ is independent of coset representatives and
+that $S\rho(h)=\rho(h)S$, by permuting the cosets with left multiplication.
+
+\paragraph{Gap 3.}
+If a linear map $P:V\to V$ has image in $W$, fixes every element of $W$,
+and commutes with $\rho(\Gamma)$, prove $V=W\oplus\ker P$ and prove
+$\ker P$ is $\Gamma$-invariant.
+
+\section*{Allowed facts}
+
+Use the stated $N$-semisimplicity, finite index, characteristic zero,
+elementary properties of group representations, cosets, and linear algebra.
+Do not assume semisimplicity for $\Gamma$.
+
+\end{document}

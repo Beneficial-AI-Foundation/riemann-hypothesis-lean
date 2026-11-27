@@ -1,0 +1,9 @@
+Run time (UTC): 20261127T095121Z
+Target: GlobalTheory.FiniteIndexSemisimple.isSSRep_of_finiteIndex
+Gap count: 3
+Exit status: 0
+Workspace: /tmp/informal-review.Rr9HISKY
+Sketch SHA-256: c08ac68b703e4b5cb99f37d9418b0db2acdc6a909a5d30530a4443877596e842
+Input SHA-256: 62c3df140ec0af43269133a175776de5f18542be000717d896fd91230da98ace
+Audit: no tool items observed in JSONL
+Interpretation: behavioral check only; filesystem read access is not blocked.
